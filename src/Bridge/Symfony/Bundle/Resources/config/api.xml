@@ -250,6 +250,10 @@
             <tag name="api_platform.identifier.denormalizer" />
         </service>
 
+        <service id="api_platform.identifier.short_uuid_normalizer" class="ApiPlatform\Core\Bridge\PascalDeVinkShortUuid\Identifier\Normalizer" public="false">
+            <tag name="api_platform.identifier.denormalizer" />
+        </service>
+
         <!-- Subresources -->
 
         <service id="api_platform.subresource_operation_factory" class="ApiPlatform\Core\Operation\Factory\SubresourceOperationFactory" public="false">
